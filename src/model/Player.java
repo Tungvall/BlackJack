@@ -23,13 +23,13 @@ public class Player {
         int aces = 0;
         for (Card c : hand) {
             if (!c.isFaceDown()) {
-                handValue += c.getCardValue();
                 if (c.getCardValue() == 11) aces++;
+                handValue += c.getCardValue();
             }
-            while (handValue > 21 && aces > 0) {
-                handValue -= 10;
-                aces--;
-            }
+        }
+        while (handValue > 21 && aces > 0) {
+            handValue -= 10;
+            aces--;
         }
         return handValue;
     }

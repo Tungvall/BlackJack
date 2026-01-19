@@ -1,12 +1,10 @@
 package model;
 
-import view.Suit;
-
 public class Card {
     boolean faceDown = false;
     int cardValue;
-    Suit cardSuit;
     String cardName;
+    Suit cardSuit;
 
     public Card(int cardValue, int cardSuit) {
         this.cardValue = cardValue;

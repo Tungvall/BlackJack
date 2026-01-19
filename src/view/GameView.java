@@ -22,7 +22,7 @@ public class GameView extends JFrame {
     private JPanel dealerCardsPanel;
     private JPanel playerCardsPanel;
 
-    public GameView() {
+    public GameView(GameController gameController) {
         setLayout(new BorderLayout());
         setTitle("BlackJack");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

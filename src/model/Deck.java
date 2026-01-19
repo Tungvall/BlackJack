@@ -8,9 +8,11 @@ public class Deck {
     private List<Card> cards = new ArrayList<>();
 
     public Deck() {
-        for (int i = 1; i <= 4; i++) {
-            for (int j = 1; j <= 13; j++) {
-                cards.add(new Card(j, i));
+        for (int d = 1; d <= 6; d++) {
+            for (int i = 1; i <= 4; i++) {
+                for (int j = 1; j <= 13; j++) {
+                    cards.add(new Card(j, i));
+                }
             }
         }
         for (Card c : cards) {

@@ -1,5 +1,7 @@
 package view;
+
 import model.Card;
+
 import javax.swing.*;
 
 public class CardFactory {

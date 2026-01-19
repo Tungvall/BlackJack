@@ -1,6 +1,8 @@
 package view;
 
+
 import model.Card;
+import model.Suit;
 
 import javax.swing.*;
 import java.awt.*;
